@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Country Capital Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('f1jpg.jpg');
+            background-size: cover;
+            background-repeat: repeat;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #69b0fd;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #f96b6b;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 16px;
+            margin: 20px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            background-color: #fff;
+            color: #181817;
+            outline: none;
+        }
+
+        select:hover {
+            background-color: #e6e6e6;
+        }
+
+        select:focus {
+            border-color: #0056b3;
+        }
+
+        #capitalDisplay {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #f5f8f9;
+        }
+
+        footer {
+            background-color: #da3030;
+            color: #fff;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        
+        h1 {
+            color: #fff;
+        }
+    </style>
+    <script>
+        function showCapital() {
+            var countrySelect = document.getElementById("countrySelect");
+            var selectedCountry = countrySelect.value;
+
+            var countryCapitals = {
+                "USA": "Washington, D.C.",
+                "Canada": "Ottawa",
+                "Argentina": "Buenos Aires",
+                "France": "Paris",
+                "Bangladesh": "Dhaka"
+            };
+
+            var capitalDisplay = document.getElementById("capitalDisplay");
+            capitalDisplay.textContent = selectedCountry ? "Capital: " + countryCapitals[selectedCountry] : "";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Country Capital Selection</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Select a Country and See Its Capital</h1>
+    <select id="countrySelect" onchange="showCapital()">
+        <option value="">Select a country...</option>
+        <option value="USA">USA</option>
+        <option value="Canada">Canada</option>
+        <option value="Argentina">Argentina</option>
+        <option value="France">France</option>
+        <option value="Bangladesh">Bangladesh</option>
+    </select>
+    <div id="capitalDisplay"></div>
+    <footer>
+        <p>&copy; countrycapital2023.com | by sumona27.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Educational Audio and Video</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-rows: 80px auto 80px;
+            grid-template-columns: 20% 60% 20%;
+            gap: 10px;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        header, footer {
+            grid-column: 1 / span 3;
+            background-color: rgb(7, 17, 55);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #contents {
+            background-color: rgb(246, 243, 96);
+            padding: 10px;
+            color: rgb(20, 20, 138);
+        }
+
+        #body {
+            background-image: url(edu4.jpg);
+            background-size: cover;
+            background-repeat:no-repeat;
+            padding: 10px;
+            text-align: center;
+            color: whitesmoke;
+        }
+
+        #remarks {
+            background-color: rgb(246, 243, 96);
+            padding: 10px;
+            color: rgb(20, 20, 138);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Educational Interaction</h1>
+    </header>
+    <div id="contents">
+        <h1>Contents</h1>
+        <ul>
+            <li><a href="body.html" target="body">Main Page</a></li>
+            <li><a href="remarks.html" target="remarks">Elaboration</a></li>
+            <li><a href="dev.html" target="eva">Evaluation</a></li>
+            <li><a href="dev.html" target="dev">Development</a></li>
+            <li><a href="faq.html" target="faq">FAQ</a></li>
+        </ul>
+    </div>
+    <div id="body">
+        <h1>Let's Watch and Listen </h1>
+        
+        <h2>Audio Section</h2>
+        <p>Listen actively and savor the experience to fully enjoy the learning journey.</p>
+        <audio controls>
+            <source src="ad.m4a" type="audio/mpeg">
+            
+        </audio>
+
+        <h2>Video Section</h2>
+        <p>Embrace active learning and enjoy the process to maximize your learning experience.</p>
+        <video width="320" height="240" controls>
+            <source src="inspi.mp4" type="video/mp4">
+            
+        </video>
+    </div>
+    <div id="remarks">
+        <h1>Remarks</h1>
+        
+        <p>What is the importance of interaction in education?
+            
+            
+            
+            Social interaction is essential for education. It helps students learn, retain, and apply. – It creates tight relationships with teachers, peers and staff at the school. – Creates stronger friendships.</p>
+    </div>
+    <footer>
+        <p>Thank you for your kind response. Made by sumonachandnee</p>
+    </footer>
+</body>
+</html>
